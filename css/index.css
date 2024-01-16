@@ -169,6 +169,19 @@ img {
   border: 5px solid rgba(0, 0, 0, 1);
 }
 
+#section .slideOuter {
+  position: relative;
+}
+
+#section .slideOuter .plapau {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #000;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
 #section .slide {
   position: relative;
   /* background-image: url(../image/mainslide1.jpg);
@@ -203,16 +216,36 @@ img {
 }
 #section .slide .text p {
   font-size: 20px;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
 }
+
+#section .slideInner .slick-current.slick-active .text p {
+  animation: fadeInUp 1s 1 both 0.3s;
+}
+
 #section .slide .text h2 {
   font-size: 50px;
   margin: 30px 0 50px;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
 }
+
+#section .slideInner .slick-current.slick-active .text h2 {
+  animation: fadeInUp 1s 1 both 1.3s;
+}
+
 #section .slide .text a {
   padding: 10px 16px;
   font-size: 18px;
   border: 2px solid #fff;
   border-radius: 3px;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+
+#section .slideInner .slick-current.slick-active .text a {
+  animation: fadeInUp 1s 1 both 2.3s;
 }
 
 #section .ourcompany {
@@ -350,22 +383,22 @@ img {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-#section .notice .slideOuter2 .slide2 {
+#section .notice .slideOuter2 .slideNotice {
   color: #fff;
   text-align: center;
 }
-#section .notice .slideOuter2 .slide2 .text h2 {
+#section .notice .slideOuter2 .slideNotice .text h2 {
   font-size: 50px;
 }
-#section .notice .slideOuter2 .slide2 .text h3 {
+#section .notice .slideOuter2 .slideNotice .text h3 {
   font-size: 24px;
   margin: 32px 0;
 }
-#section .notice .slideOuter2 .slide2 .text p {
+#section .notice .slideOuter2 .slideNotice .text p {
   font-size: 14px;
   margin: 0 0 35px;
 }
-#section .notice .slideOuter2 .slide2 .text a {
+#section .notice .slideOuter2 .slideNotice .text a {
   font-size: 12px;
   padding: 10px 30px;
   border: 1px solid #fff;
