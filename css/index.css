@@ -245,6 +245,7 @@ img {
 }
 
 #section .slideInner .slick-current.slick-active .text a {
+  display: inline-block;
   animation: fadeInUp 1s 1 both 2.3s;
 }
 
